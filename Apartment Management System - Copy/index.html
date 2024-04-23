@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="mobile-nav-icon" onclick="toggleSidePanel()">☰</div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#first-container">Home</a></li>
+                <li><a href="#second-container">About</a></li>
+                <li><a href="#third-container">Contact</a></li>
+                <li><a href="login.html" id="login-button">Profile</a></li>
+            </ul>
+            <div class="hamburger-menu">&#9776;</div>
+        </nav>
+    </header>
+    <!-- Navigation Menu -->
+    <div class="side-panel" id="sidePanel">
+        <a href="#first-container" onclick="toggleSidePanel()">
+            <img src="images/home.png" alt="Home"> Home
+        </a>
+        <a href="#second-container" onclick="toggleSidePanel()">
+            <img src="images/about.png" alt="Projects"> About
+        </a>
+        <a href="#third-container" onclick="toggleSidePanel()">
+            <img src="images/contact.png" alt="About"> Contact
+        </a>
+        <a href="login.html" onclick="toggleSidePanel()">
+            <img src="images/login.png" alt="Contact"> Profile
+        </a>
+        <span class="exit-btn" onclick="toggleSidePanel()">
+            <img src="images/exit.png" alt="Exit"> Exit
+        </span>
+    </div>
+
+<!-- First Container -->
+<div class="first-container" id="first-container">
+        <!-- Home Description -->
+        <div class="description">
+            <h1>Blancaflor Apartment</h1>
+            <p>Sagana Remville Homes, B5 L31 Yakal, Bacoor, 4102 Cavite, Philippines</p>
+                    
+        <div class="room-availability">
+            <div class="room-status">
+            <div class="dot available"></div>
+            <p>9 Rooms Available</p>
+            </div>
+            <div class="room-status">
+            <div class="dot occupied"></div>
+            <p>5 Rooms Occupied</p>
+            </div>
+        </div>
+        <button class="inquire-button">Inquire Now</button>
+        </div>
+</div>
+    
+<!-- Second Container -->
+<div class="second-container" id="second-container">
+    <h1 id="section-title">About</h1>
+    <!-- About -->
+    <div class="about-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nisi dolorem in quisquam quidem aut, consequuntur exercitationem obcaecati natus laudantium laborum enim unde, assumenda voluptates ullam voluptatum tempore. Amet, necessitatibus!</p>
+        <div class="carousel-container">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+        <div class="cards">
+          <label class="card" for="item-1" id="song-1">
+            <img src="images/1.png" alt="song">
+          </label>
+          <label class="card" for="item-2" id="song-2">
+            <img src="images/2.png" alt="song">
+          </label>
+          <label class="card" for="item-3" id="song-3">
+            <img src="images/3.png" alt="song">
+          </label>
+        </div>
+      </div>  
+      </div>
+    <!-- Room Types -->
+    <h1 id="section-subtitle">Room Types:</h1>
+
+    <div class="room-container">
+        <div class="room-description">
+            <div class="room-element">
+            <div class="room-text">
+            <h1>Studio Type Room</h1>
+            <div class="price"><p>PHP 5,000</p></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor tenetur adipisci ad cumque nihil nulla minima</p>
+            </div>
+                <div class="specs">
+                    <p>69 X 96M</p>
+                    <p>Bathroom</p>
+                    <p>Sink</p>
+                </div>
+            </div>
+            <div class="room-element"><button class="inquire-button">Inquire Now</button></div>
+                
+            </div>
+        <iframe width="700px" height="450" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7cbcq?logo=1&info=1&fs=1&vr=0&zoom=1&thumbs=1"></iframe>
+    </div>
+    <div class="room-container">
+        <div class="room-description">
+            <div class="room-element">
+            <div class="room-text">
+            <h1>Studio Type Room</h1>
+            <div class="price"><p>PHP 5,000</p></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolor tenetur adipisci ad cumque nihil nulla minima</p>
+            </div>
+                <div class="specs">
+                    <p>69 X 96M</p>
+                    <p>Bathroom</p>
+                    <p>Sink</p>
+                </div>
+            </div>
+            <div class="room-element"><button class="inquire-button">Inquire Now</button></div>
+                
+            </div>
+        <iframe width="700px" height="450" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7cbcq?logo=1&info=1&fs=1&vr=0&zoom=1&thumbs=1"></iframe>
+    </div>
+
+    <!-- Map -->
+    <h1 id="section-subtitle">Where to Find:</h1>
+    <div class="map-container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1624.4999494969697!2d120.94705530529045!3d14.442498957950919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d34304cdeb9d%3A0x9d1fcdd05432f61f!2s8%20Yakal%2C%20Bacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1711676948129!5m2!1sen!2sph" width="700px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map-address">
+              <a href="">Sagana Remville Homes, B5 L31 Yakal, Bacoor, 4102 Cavite</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Third Container -->
+<div class="third-container" id="third-container">
+    <h1 id="section-title">Contact</h1>
+    <!-- Contact -->
+    <div class="contact-container">
+    <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">0957836577</div>
+              <div class="text-two">0946294638</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">blancaflorapt@gmail.com</div>
+              <div class="text-two">apartment@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any inquiries about our apartment, please don't hesitate to send us a message. It's our pleasure to help you.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+              <input type="text" placeholder="Enter your message">
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now">
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <title>Tenants Login</title>
+  <link rel="stylesheet" href="styles/login-style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div id="back-container">
+    <a href="index.html"><div id="go-back">Go Back</div></a>
+  </div>
+  
+  
+  <div class="form-box" id="login-form">
+    <h2>Login</h2>
+    <form action="php/login.php" method="post">
+      <div class="input-box">
+        <input type="text" name="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember me</label>
+        <a href="#">Forget Password?</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <div class="login-register">
+      <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+      <p>Admin? <a href="#" id="admin-link">Admin Login</a></p>
+    </div>
+  </div>
+
+  <div class="form-box register" style="display: none;">
+    <div id="form-box-head">
+      <h2>Register</h2>
+      <a href="login.html"><img src="images/back.png"></a>
+    </div>
+    <form action="php/register.php" method="post">
+      <div class="input-box">
+        <span class="icon">
+            <ion-icon name="person"></ion-icon></span>
+        <input type="text" name="first_name"required>
+        <label>First Name</label>
+      </div>
+
+      <div class="input-box">
+        <span class="icon">
+            <ion-icon name="person"></ion-icon></span>
+        <input type="text" name="last_name"required>
+        <label>Last Name</label>
+      </div>
+
+      <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="text" name="email"required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-box">
+        <span class="icon"><ion-icon name="key"></ion-icon></span>
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+
+      <div class="input-box">
+        <span class="icon"><ion-icon name="key"></ion-icon></span>
+        <input type="password" name="confirm_password" required>
+        <label>Confirm-Password</label>
+      </div>
+
+      <div class="terms-condition">
+        <label><input type="checkbox">I agree to the terms & conditions</label>
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <div class="login-register">
+      <p>Already have an account?<a href="login.html" class="login-link" id="loginButton">Login</a></p>
+    </div>
+  </div>
+
+  <div class="form-box admin" style="display: none;">
+    <div id="form-box-head">
+      <h2>Admin</h2>
+      <a href="login.html"><img src="images/back.png"></a>
+    </div>
+
+    <div class="input-box">
+      <span class="icon"><ion-icon name="mail"></ion-icon></span>
+      <input type="text" name="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="key"></ion-icon></span>
+      <input type="password" name="password" required>
+      <label>Password</label>
+    </div>
+    <div class="remember-forgot">
+      <label><input type="checkbox">Remember me</label>
+      <a href="#">Forget Password?</a>
+    </div>
+    <button type="submit" class="btn">Login</button>
+  </div>
+</div>
+
+<script src="scripts/login-script.js"></script>
+</body>
+</html>
